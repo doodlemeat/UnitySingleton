@@ -33,6 +33,7 @@ If true, an error will be raised if at any time there is two of the same Singlet
 
 
 
-## Why not use [DisallowMultipleComponent]
+## Why not use [DisallowMultipleComponent]?
 It is up the the coder to decide if their SingletonClass should have this attribute. 
 However, [DisallowMultipleComponent] only disallows adding multiple components of the same type in the editor. To make it work during runtime, mustBeOnlyInstanceInScene must be set to true.
+And if the mustBeOnlyInstanceInScene is set to false, having [DisallowMultipleComponent] will prevent you from being able to do so.
