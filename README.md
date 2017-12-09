@@ -16,6 +16,7 @@ class MySingleton : UnitySingleton<MySingleton> {
 
 UnitySingleton uses the Awake function to do the neccessary checks so you have to move your Awake() code to OnAwake().
 
+
 ## Default attribute values
 ```C#
 [UnitySingleton(mustBeOnlyComponentOnObject: false, mustBeWithinRootObject: false, mustBeOnlyInstanceInScene: true)]
@@ -29,6 +30,7 @@ If true, an error will be raised if the GameObject your Singleton lies in has a 
 
 ### mustBeOnlyInstanceInScene
 If true, an error will be raised if at any time there is two of the same Singleton components in the scene.
+
 
 
 ## Why not use [DisallowMultipleComponent]
